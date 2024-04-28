@@ -1,0 +1,8 @@
+# Scripts para execução
+default: -p pretty -p html_report -p json_report -p ambiente
+
+pretty: --format pretty
+ci: --format progress
+html_report: --format pretty --format html --out=results/report.html
+json_report: --format json --out=results/report.json
+ambiente: plataforma=Wind
